@@ -34,6 +34,7 @@ Check out our Slide deck: https://www.canva.com/design/DAFtrpfIBcQ/bqb5-5BTiyXXK
 
 #### Data Set
 - [![Excel][Execl.js]][Excel-url]
+- 346581 x 25 dataset
   
 #### Data Set Exploration 
 <a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-yac2YMT6Zl-LRLiWyKOVUto4Tl2ZhAGm4IM3T3cDjV-S_lhgh1cZelYWbNmxLBjBA1BFTHoc_lteL6PmQndBAYcRnE3g=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-yac2YMT6Zl-LRLiWyKOVUto4Tl2ZhAGm4IM3T3cDjV-S_lhgh1cZelYWbNmxLBjBA1BFTHoc_lteL6PmQndBAYcRnE3g=s1600" /> </a>
@@ -44,7 +45,34 @@ Check out our Slide deck: https://www.canva.com/design/DAFtrpfIBcQ/bqb5-5BTiyXXK
 - ![R][R.js]
 - ![Tableau][Tableau.js]
   
-## Data Selection, Processing & Cleanup
+## Key Insights
+To answer qn 1: <b>
+What are the factors contributing to arrival delays for Acorn Airlines and how do they compare against Berry
+Airlines?</b>
+<br />
+Our team generated the following key insights. 
+<br />
+<br />
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-yv_3UP_l0K3oLBPQXyTkjk2G6FFNNFf7Pu721VvlIWGCONlZ16RzR-FRXqBZ1IGqqJIZ8ZclIIqZaZIbAK-GfF2e3rgQ=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-yv_3UP_l0K3oLBPQXyTkjk2G6FFNNFf7Pu721VvlIWGCONlZ16RzR-FRXqBZ1IGqqJIZ8ZclIIqZaZIbAK-GfF2e3rgQ=s1600" /> </a>
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-xv_O9ppNRv42YBH55CTv4IzEU11wNE_6fJcEbVqQ83sKtFtq1GbiX2ma2QySMUaXKtZGHrYVtPf8qjUFKdY7eV97503w=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-xv_O9ppNRv42YBH55CTv4IzEU11wNE_6fJcEbVqQ83sKtFtq1GbiX2ma2QySMUaXKtZGHrYVtPf8qjUFKdY7eV97503w=s1600" /> </a>
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-y55_8HB-V-cb4GsQ2bMSr8ON0aqLBiO1-_cc7JENiM__LR6zD_YWdhZKLCQuerDmEsxNwZk5l41Ew_1mdtO2Vo8BRgEw=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-y55_8HB-V-cb4GsQ2bMSr8ON0aqLBiO1-_cc7JENiM__LR6zD_YWdhZKLCQuerDmEsxNwZk5l41Ew_1mdtO2Vo8BRgEw=s1600" /> </a>
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-ydkV8IXfnzUPRyzU0OuQ0RUe1xTZ2tdv4EHBExWd64i6A2O54y0BudDNx38R1UpeN-9-W1ZIGnGhhmBd6Oxllt0cw_=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-ydkV8IXfnzUPRyzU0OuQ0RUe1xTZ2tdv4EHBExWd64i6A2O54y0BudDNx38R1UpeN-9-W1ZIGnGhhmBd6Oxllt0cw_=s1600" /> </a>
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-ybodmszmSOcd-Z_bqFwwMq19NoxOQANjFDDuVpaAnc_IEsvbstBrPPF7zG1oAqJzywzVeyHdBvN9Hbo1vxfSOhp4eOlQ=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-ybodmszmSOcd-Z_bqFwwMq19NoxOQANjFDDuVpaAnc_IEsvbstBrPPF7zG1oAqJzywzVeyHdBvN9Hbo1vxfSOhp4eOlQ=s1600" /> </a>
+<br />
+<br />
+### **Logical Flow and Dervied Insight**
+1.) **We first analysed and found out that the proportion of flights delayed by weather was more for Acorn Airline(AA) compared to Berry Airlines(BA).** 
+<br />
+<br />
+2.) **We then linked weather delay to the departure airport of the flights and on this note, we proceeded to find the top 5 airports with the highest percentage of flights delayed by weather.**
+<br />
+<br />
+3.) **True enough, of the top 5 most weather impacted airports, AA visits these airports more than BA.**
+<br />
+<br />
+4.) **Therefore one of the factors we attribute to AA's arrival delays would be their frequent departure from airports plagued by bad weather.**
+
+
 ### Selecting the Data Source 
 The fragrantica.com website provided information on perfumes/cologne available for sale, including the following:
 - Fragrance name and designer 
