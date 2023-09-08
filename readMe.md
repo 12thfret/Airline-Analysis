@@ -40,40 +40,10 @@ Check out our Slide deck: https://www.canva.com/design/DAFtrpfIBcQ/bqb5-5BTiyXXK
 <a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-yRYVkvUCxsVJtxYU9GTbHX_2Y5X5JNJVi3N1V9aa6hUwvvxTPrCy_bP3FHk2tNY2VuCySfRXO9pI_GP73i2xK6_VN9Bg=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-yRYVkvUCxsVJtxYU9GTbHX_2Y5X5JNJVi3N1V9aa6hUwvvxTPrCy_bP3FHk2tNY2VuCySfRXO9pI_GP73i2xK6_VN9Bg=s1600" /> </a>
 
 ## Technologies
-* SQL
-* R
-* Tableau
+- ![SQL][SQL.js]
+- ![R][R.js]
+- ![Tableau][Tableau.js]
   
-## Libraries and Dependencies
-
-**Python Dependencies**
-* BeautifulSoup
-* Flask
-* Flask_pymongo
-* Json
-* Matplotlip
-* Numpy
-* Pandas
-* Pprint 
-* Pymongo
-* Re
-* Requests
-* Splinter
-* Selenium
-* Seaborn
-* Sklearn
-* Tensorflow
-* Time
-* Webdriver_manager.chrome
-
-**JavaScript Dependencies**
-* D3 Javascript
-* D3 ToolTip
-
-**HTML and CSS Dependencies**
-* [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
-* [Bootstrap Stylesheet](https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css)
-
 ## Data Selection, Processing & Cleanup
 ### Selecting the Data Source 
 The fragrantica.com website provided information on perfumes/cologne available for sale, including the following:
@@ -205,3 +175,6 @@ Created by:
 <!-- MARKDOWN LINKS & IMAGES -->
 [Execl.js]: https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white
 [Excel-url]: https://drive.google.com/file/d/12dgUu50pRXImvzn1g1V2riA2bgPU8Lil/view?usp=drive_link
+[R.js]: https://img.shields.io/badge/RStudio-75AADB?style=for-the-badge&logo=RStudio&logoColor=white
+[SQL.js]: https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white
+[Tableau.js]: https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white
