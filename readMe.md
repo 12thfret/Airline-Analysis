@@ -45,7 +45,7 @@ Check out our Slide deck: https://www.canva.com/design/DAFtrpfIBcQ/bqb5-5BTiyXXK
 - ![R][R.js]
 - ![Tableau][Tableau.js]
   
-## Key Insights
+## Key Insight 1
 To answer qn 1: <b>
 What are the factors contributing to arrival delays for Acorn Airlines and how do they compare against Berry
 Airlines?</b>
@@ -72,133 +72,46 @@ Our team generated the following key insights.
 <br />
 4.) **Therefore one of the factors we attribute to AA's arrival delays would be their frequent departure from airports plagued by bad weather.**
 
+## Key Insight 2
 
-### Selecting the Data Source 
-The fragrantica.com website provided information on perfumes/cologne available for sale, including the following:
-- Fragrance name and designer 
-- Fragrance image
-- Main accords
-- Top notes, middle notes, and base notes 
-- Perfume rating out of 5
-- Sillage and Longevity
-- Price Value
-- Gender
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-xPclxNo8H_u8AEHoXHSRtZx8dDUAkfqhUoUzCqdnGcHRVStc1n7oFM1osF8BYpaX3sHATgz44eXiQi5_GVASNNU3DmIg=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-xPclxNo8H_u8AEHoXHSRtZx8dDUAkfqhUoUzCqdnGcHRVStc1n7oFM1osF8BYpaX3sHATgz44eXiQi5_GVASNNU3DmIg=s1600" /> </a>
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-xL1gjSsD0HBilnCVsN6bYJgpFmW5TkunPCkbLIiGcmvGavc6tAyoKDXL5DIAA5cjI5y9OqPioSIXYTkggw6YRy2TpJNg=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-xL1gjSsD0HBilnCVsN6bYJgpFmW5TkunPCkbLIiGcmvGavc6tAyoKDXL5DIAA5cjI5y9OqPioSIXYTkggw6YRy2TpJNg=s1600" /> </a>
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-zwriMDTSMVFUP-jDgcAyiFUufvmBsqX7jo9r2PpYggvQw8NhGXVzW2QKo2J-ZVUmstvd_AXByRboIDFTNZRjlc-pWa=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-zwriMDTSMVFUP-jDgcAyiFUufvmBsqX7jo9r2PpYggvQw8NhGXVzW2QKo2J-ZVUmstvd_AXByRboIDFTNZRjlc-pWa=s1600" /> </a>
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-w3PZbZFAYmNgtpwqq6faTN5N6qJ1zM1X_D-7y74TCOXTdqrGR_rkSq5-3VEhPGHizCAH6KipTEOD3_CGLIb477ZrG6qA=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-w3PZbZFAYmNgtpwqq6faTN5N6qJ1zM1X_D-7y74TCOXTdqrGR_rkSq5-3VEhPGHizCAH6KipTEOD3_CGLIb477ZrG6qA=s1600" /> </a>
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-z2BTwZuexceoR0FK3lsZwBsSt8CWDWjba9uD76sfYArc9d-Zi9W6gy-Mnd-E8GsG4o3HofB6n13JgGyYY5Wk9ldlQ2gA=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-z2BTwZuexceoR0FK3lsZwBsSt8CWDWjba9uD76sfYArc9d-Zi9W6gy-Mnd-E8GsG4o3HofB6n13JgGyYY5Wk9ldlQ2gA=s1600" /> </a>
 
-### Web Scraping 
-We initially created web-scraping code to gather all perfumes from the fragrantica.com website. However, on the main search page when the "see more results" button was clicked, the page maxed out at 1,000 perfumes, despite having over 60,000 perfumes on record. We rewrote our code to scrape the data by year in a effort to gather as many perfumes as possible, presuming that no more than 1000 perfumes would have been developed in any one year (from the 1920s through 2020). If more than 1,000 perfumes were produced in a single year, the then those extra perfumes would not be reflected in our database. Additionally, due to other web scraping limitations, we were able to scrape a total of 517 perfumes during the project timeframe. 
+### **Logical Flow and Dervied Insight**
+1.) **We looked at the top 50 aircrafts (tail number) that flew the most and found out that 88% of the top 50 aircrafts belonged to Berry Airlines while only 12% belong to Acorn Airlines.** 
+<br />
+<br />
+2.) **We then looked at the percentage of late aircraft delay for these 50 aircrafts and found that on average, aircrafts belonging to AA had a 14.5% delay compared to 6.5% for BA.**
+<br />
+<br />
+3.) **What we can infer from the data analysis is that despite BA aircrafts flying more often, they experience a lower percentage of late aircraft delay compared to aircrafts in AA's fleet.**
+<br />
+<br />
+4.) **We thus attributed these delays to poor management of the aircraft on Acorn Airline's end**
 
-We also scraped all available perfume notes, for a total of 1,012. 
+## Proposed Solutions
+To answer qn 2: <b>
+What course of actions should Acorn Airlines take to better its performance against Berry Airlines? </b>
+<br />
+Our team proposed the following solutions. 
+<br />
+<br />
 
-### Processing and Cleanup 
-- Performed web scraping in jupyter notebook using BeautifulSoup, Splinter, and selenium
-- Scraped perfume_data was converted data to a dictionary or list of dictionaries and exported to a json file.
-- Scraped perfume_notes were converted to a csv file
-- Combined json files from multiple web scrapes in a jupyter notebook, and exported combined json file to MongoDB to create the perfume_notes collection. 
-- Imported the csv into jupyter notebook; cleaned columns to optimize export to MongoDB; and exported csv  
-
-## Machine Learning Development
-
-Based on the perfume notes, we wanted to check if we could predict if the perfume is for men, women or unisex.
-
-We loaded the perfume data from MongoDB. The perfume notes are divided as top, middle and base notes. Each of these fields is a list. So we had to use MultiLabelBinarizer to create a feature column for each note based on whether it was present as a top, middle or base note.
-
-![MultiLabelBinarizer](images/MultiLabelBinarizer1.png "MultiLabelBinarizer")
-
-If a note was not an ingredient in the perfume, it was marked as 0, otherwise it was marked as 1. We decided to use only notes as features. Accords are a combination of notes, so we dropped that as a feature. Longevity, Sillage, gender vote and price value does not affect the outcome of whether the perfume is for a particular gender, so we skipped those as features as well. After dropping unnecessary columns from the perfume dataframe, the resulting was X(data), which are all the features, and y(target), which was if the perfume was for men, women or unisex. 
-
-A dataframe was created listing all the features and uploaded to MongoDB, which is used later app.py. Another dataframe with all the notes from the perfumes in the perfume_data collection was created and added to MongoDB as notes_features. This is used for the list of notes on the "Create A Frangrance" page.
-
-We also looked at the feature importance, but did not remove any since they had almost the same importance.
-
-![FeatureImportance](images/featureImportance.png "Feature Importance")
-
-After splitting the data into train and test we tried the following Models and checked their classification reports to find out which was the best model:
-
-#### SVC
-
-![SVC](images/svc.png "SVC")
-
-We used GridSearch with the following parameters:   
-```param_grid = {'C': [5, 20, 50],
-              'kernel': ('linear', 'rbf')}
-```
-
-#### KNearestNeighbors
-
-![KNearestNeighbors](images/knn.png "KNearestNeighbors")
-
-#### DecisionTree
-
-![DecisionTree](images/DecisionTree.png "DecisionTree")
-
-#### RandomForest
-
-![RandomForest](images/RandomForest.png "RandomForest")
-
-#### Deep Learning Neural Network
-
-![NeuralNetwork](images/NeuralNetwork.png "NeuralNetwork")
-
-From the classification reports, we decided that SVC with kernel:rbf and C=20 was the best model with an accuracy of 0.62.
-
-We saved this model using joblib.   
-```import joblib
-final_model = grid.best_estimator_
-filename = '../webapp/static/Resources/gender_perfume_model.sav'
-joblib.dump(final_model, filename)
-```
-
-
-## Tableau Development
-For the Tableau visualizations we used a jupyter notebook to change our json to a csv. We used a calculated field to change Rating from a string to an integer. We also truncated Rating to create a bar chart of the ratings in the second Dashboard. The dashbaords were then embedded into our website. 
-
-- [Dashboard1](https://public.tableau.com/views/Perfume_Dashboard2_JV/Dashboard2?:language=en&:display_count=y&publish=yes&:origin=viz_share_link)
-- [Dashboard2](https://public.tableau.com/profile/chloe3464#!/vizhome/perfumes_dash/Dashboard1?publish=yes)
-
-![Gender](images/gender_pie_chart.png)
-![Top](images/top_10_perfumes.png)
-![TopGender](images/top_perfumes_by_gender.png)
-![Bubble](images/bubble_chart.png)
-![RateRange](images/perfumes_range.png)
-![MostVotes](images/most_votes.png)
-
-## Perfume Designer App
-We created a web-app using Flask, HTML, CSS, JavaScript, and D3.  Our app includes a Home page and 3 interactive webpages:  
-* Create Your Fragrance: lets you create a perfume based on a selection of Top, Middle, and Base Notes.  You can select up to three notes of each: scroll through and peruse the list, or simply start typing a note that strikes your fancy.  Our machine learning model will let you know if that scent is best for men or women or both.  Our model will also tell you whether you've created an entirely new perfume! 
-![CreatePerfume1](images/create_perfume1.png)
-
-* Finally, if an existing scent contains at least one each of the top, middle, and base notes you selected, our model will return the names of those scents for you to consider in your search for the perfect perfume! 
-![CreatePerfume2](images/create_perfume2.png)
-
-* Perfume Info: Click on a fragrance term to see its definition and gain a better understanding of what makes a perfume! 
-![PerfumeInfo](images/perfume_info.png)
-
-## Setup
-
-#### Setup Instructions
-
-1. Create a new conda environment with python version 3.7  
-2. Use pip install -r requirements.txt   
-3. Webscraping: The followings files were involved in web-scraping or used to create json files that were imported into the Mongo DB and DO NOT need to be run: Notes_Scrape.ipynb and Perfume_Scrape.ipynb
-4. Run https://github.com/sir-omoreno/final-project/blob/main/mongo_db/mongo_db_creation.ipynb to create the mongo database perfume_db, and the perfume_data and perfume_notes collections
-5. Run https://github.com/sir-omoreno/final-project/blob/main/ML/Perfume_ML_Gender.ipynb to create the perfume_features and note_features collections, and the machine learning model (gender_perfume_model.sav)
-6. Run https://github.com/sir-omoreno/final-project/blob/main/webapp/app.py in your new conda environment to open the flask web application.
-
-## Lessons Learned
-
-We had initially planned to create a machine learning model that would predict the popularity of the perfume based on the perfume features. However, this model returns negative R2 scores indicating that the model was a terrible fit for the data. Had we been able to scrape more perfumes and tune our model, we may have had better results.
-
-## Inspiration
-Inspired by Rutgers Data Visulization Bootcamp & smelly people everywhere!
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-x1k4KqmOcgh-4IOOjjrG93ORXKRo_dPZKAe3j6Q_mi8uArqk3dIzMAs2xREIOz_FPCitABtFeKjN0gpqhaIOV7Usr4eA=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-x1k4KqmOcgh-4IOOjjrG93ORXKRo_dPZKAe3j6Q_mi8uArqk3dIzMAs2xREIOz_FPCitABtFeKjN0gpqhaIOV7Usr4eA=s1600" /> </a>
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-wfQ-PsV6SaNmvIn110q6r5E1c2-1ClW9kWS9TR4bp9anL5osK4M3iKzbGun5yX0R8RY2HWRdZo0JMrd7r3wDTbEKx4=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-wfQ-PsV6SaNmvIn110q6r5E1c2-1ClW9kWS9TR4bp9anL5osK4M3iKzbGun5yX0R8RY2HWRdZo0JMrd7r3wDTbEKx4=s1600" /> </a>
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-wQojYVBINubObb-C8menUVx7xe0wc-gp2x0lA_a4zHA9NleJAMLwA4qu6hNfTQpZ2M5Qaj7rqnsAraRvbHVh5iCCXsqQ=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-wQojYVBINubObb-C8menUVx7xe0wc-gp2x0lA_a4zHA9NleJAMLwA4qu6hNfTQpZ2M5Qaj7rqnsAraRvbHVh5iCCXsqQ=s1600" /> </a>
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-whUpI5ggtbRc0aMpHAPJxNsjhjp-sHExKsKFRSKYGhQm5smX6HeCmVCTxyrEQfDNr-oPKASe9Ta1nigO4ipkFg-SgSJg=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-whUpI5ggtbRc0aMpHAPJxNsjhjp-sHExKsKFRSKYGhQm5smX6HeCmVCTxyrEQfDNr-oPKASe9Ta1nigO4ipkFg-SgSJg=s1600" /> </a>
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-wOUVwMm7bxJt0S5K5QBBzOspo3t4J0IZQlvtl2OQsRY226ToIUSxqWGW7LLcxGMrqc9UNUCv-OEFeaC4xyIuZtwUHr=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-wOUVwMm7bxJt0S5K5QBBzOspo3t4J0IZQlvtl2OQsRY226ToIUSxqWGW7LLcxGMrqc9UNUCv-OEFeaC4xyIuZtwUHr=s1600" /> </a>
+<a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-y-hTT0RdQKzMjjBNiDZQwAvajD2UY1YU68XDa4dMlN4w-zaMZuuq8EQglshUJr_wjXparQliE9hI1DoZkjHcxPWxtu=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-y-hTT0RdQKzMjjBNiDZQwAvajD2UY1YU68XDa4dMlN4w-zaMZuuq8EQglshUJr_wjXparQliE9hI1DoZkjHcxPWxtu=s1600" /> </a>
 
 ## Contact
-Created by:
-- [Chloe Veras](https://github.com/cveras33)
-- [Deepa Vadakan](https://github.com/deepavadakan)
-- [Jennifer Dean](https://github.com/Jen-Dean)
-- [Jessi Volosin](https://github.com/jvolosin)
-- [Kasey Lacerda](https://github.com/KLacerda08)
-- [Osvaldo (Ozzie) Mauricio Moreno](https://github.com/sir-omoreno)
+![Gmail][Gmail-shield]  [![LinkedIn][linkedin-shield]][linkedin-url]
+ <br />
+ keithteo8@gmail.com
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [Execl.js]: https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white
@@ -206,3 +119,7 @@ Created by:
 [R.js]: https://img.shields.io/badge/RStudio-75AADB?style=for-the-badge&logo=RStudio&logoColor=white
 [SQL.js]: https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white
 [Tableau.js]: https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white
+[linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
+[linkedin-url]: https://www.linkedin.com/in/keith-teo-395f/
+[gmail-shield]: https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
+[gmail_handle]: https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
