@@ -16,10 +16,12 @@ Check out our Slide deck: https://www.canva.com/design/DAFtrpfIBcQ/bqb5-5BTiyXXK
 
 ## Table of contents
 * [General Info](#general-info)
-* [Data Sources](#data-set)
-* [Tableau Development](#data-set-exploration)
+* [Data Set](#data-set)
+* [Data Set Exploration](#data-set-exploration)
 * [Technologies](#technologies)
-* [Lessons Learned](#status)
+* [Key Insight 1](#key-insight-1)
+* [Key Insight 2](#key-insight-2)
+* [Proposed Solutions](#proposed-solutions)
 * [Contact](#contact)
 
 ## General info
