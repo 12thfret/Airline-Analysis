@@ -16,8 +16,9 @@ Check out our Slide deck: https://www.canva.com/design/DAFtrpfIBcQ/bqb5-5BTiyXXK
 
 ## Table of contents
 * [General Info](#general-info)
-* [Data Sources](#data)
-* [Tableau Development](#tableau)
+* [Data Sources](#data-set)
+* [Tableau Development](#data-set-exploration)
+* [Technologies](#technologies)
 * [Lessons Learned](#status)
 * [Contact](#contact)
 
@@ -29,8 +30,6 @@ Check out our Slide deck: https://www.canva.com/design/DAFtrpfIBcQ/bqb5-5BTiyXXK
 - Tay Han
 - Timothy Chan
 - Ee Fun
-
-## Data and Information Sources
 
 #### Data Set
 - [![Excel][Execl.js]][Excel-url]
